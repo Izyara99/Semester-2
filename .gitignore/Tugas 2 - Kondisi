@@ -1,0 +1,14 @@
+public static void main(String[] args){
+        String barang = "Kucing";
+        System.out.println("Nama Barang : "+ barang);
+        if(barang == "Mouse"){
+            System.out.println("Harga Rp 30.000");
+        }else if(barang == "Keyboard"){
+            System.out.println("Harga Rp 80.000");
+        }else if(barang == "Monitor"){
+            System.out.println("Harga Rp 50.000");
+        }else{
+            System.out.println("Maaf, data belum ada.");
+        }
+    }
+}
