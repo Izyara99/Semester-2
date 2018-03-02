@@ -1,0 +1,27 @@
+import scner dulu.
+
+public static void main(String[] args){
+        int tahun;
+        Scanner inpt = new Scanner(System.in);
+        String hasil = "Kabisat";
+        System.out.println("Masukan tahun (1900-2005) : " );
+        tahun = inpt.nextInt();
+        if(tahun <= 1900){
+            System.out.println("Maaf, tahun input dibawah 1900");
+        }else if(tahun >= 2005){
+            System.out.println("Maaf, tahun input melebihi 2005");
+        }else{
+        if(tahun%4 == 0){
+            if(tahun %100 == 0){
+                if(tahun %400 == 0){
+                    hasil = "Kabisat";
+                }else{
+                    hasil = "Bukan Kabisat";
+                }
+            }
+        }else hasil = "Bukan Kabisat";
+        System.out.println(tahun+" Temasuk Tahun "+hasil);
+        }
+        
+    }
+}
