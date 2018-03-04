@@ -1,0 +1,14 @@
+#include <iostream>
+#include <conio.h>
+
+using namespace std;
+int main(){
+	int x,*px,*py;
+	x = 150;
+	px = &x;
+	py = px;
+	cout << "Variable X = " << x << endl;
+	cout << "Nilai Pointer X = " << *px << endl;
+	cout << "Nilai Pointer Y = "<< *py << endl;
+	getch();
+}
