@@ -1,0 +1,25 @@
+#include <iostream>
+#include <conio.h>
+#include <stdlib.h>
+
+using namespace std;
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+int main(int argc, char** argv) {
+	system("color b");
+	int x = 100;
+	while(x<=120){
+		int y = 100;
+		int *px;
+		px = &x;
+		cout <<"Nilai X = " << x << endl;
+		cout <<"Nilai Y = " << y << endl;
+		cout <<"Alamat X = " << px << endl;
+		cout <<"Alamat PX = " << &px << endl;
+		cout <<"Nilai PX = " << *px << endl;
+		cout << endl;
+		x+=10;
+	}
+	getch();
+}
