@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+/**
+ *
+ * @author zzvnxx
+ */
+public class Tugas2Faktorial {
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        int fak = 1, angka = 0;
+        System.out.print("Masukkan angka : ");
+        Scanner in = new Scanner(System.in);
+        angka = in.nextInt();
+        for(int i=1; i<=angka; i++){
+            fak = i * fak;
+        }
+        System.out.println(angka+"! adalah "+fak);
+    }
+    
+}
